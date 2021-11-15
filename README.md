@@ -48,3 +48,6 @@ $ python3 py_docker_ps/main.py --all
   ef828f21c101  3ae9bf4c115a  /bin/sh -c 'echo "CRE  1636894144  Exited (1) 26 hours ago           thirsty_jones           
   4afdc8df9247  078bc2297574  /bin/sh -c 'fpm --inp  1636894066  Exited (1) 26 hours ago           festive_sutherland  
 ```
+## Roadmap
+Implement ```filter``` and ```format```
+Add test coverage
