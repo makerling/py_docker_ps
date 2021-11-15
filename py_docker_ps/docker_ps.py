@@ -30,7 +30,7 @@ class Container():
     def data_scope(self, dcont):
         """Determines the logic of the arguments from user input"""
 
-        cont_data = dcont.containers(limit=self.latest)
+        cont_data = dcont.containers(all=self.dall)
         if self.last:
             self.latest = 1
         if self.latest > 0:
@@ -50,7 +50,7 @@ class Container():
 
         data = []
 
-        if self.notrunc is True:
+        if self.notrunc:
             for row in cont_data:
                 data.append([
                     row['Id'],
@@ -61,7 +61,7 @@ class Container():
                     ''.join(row['Ports']),
                     row['Names'][0][1:]
                     ])
-        elif self.quiet is True:
+        elif self.quiet:
             for row in cont_data:
                 data.append([row['Id']])
         else:
