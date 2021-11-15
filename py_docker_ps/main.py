@@ -12,8 +12,6 @@ def main():
 
     args = parse_cli_args()
 
-    print(args)
-
     dall = args['all']
     last = args['last']
     latest = args['latest']
