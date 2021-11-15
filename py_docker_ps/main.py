@@ -10,16 +10,15 @@ def main():
 
     args = parse_cli_args()
 
+    print(args)
+
     dall = args['all']
-    dfilter = args['filter']
-    dformat = args['format']
     last = args['last']
     latest = args['latest']
     notrunc = args['notrunc']
-    quiet = args['quiet']
-    size = args['size']     
+    quiet = args['quiet']   
 
-    container = d.Container(dall, dfilter, dformat, last, latest, notrunc, quiet, size)
+    container = d.Container(dall, last, latest, notrunc, quiet)
     container.generate(DC)
 
 if __name__ == "__main__":
