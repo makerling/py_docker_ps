@@ -20,7 +20,7 @@ def parse_cli_args():
     my_parser.add_argument(
         '-n',
         '--last',
-        action='store',
+        action='store_true',
         help='Show n last created containers (includes all states)'
     )
     my_parser.add_argument(
@@ -48,3 +48,4 @@ def parse_cli_args():
     args = vars(my_parser.parse_args())
 
     return args
+    
