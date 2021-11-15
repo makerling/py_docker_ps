@@ -3,6 +3,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Usage](#usage)
 
 ## General info
 This is a python cli application that takes user input and returns information about the Docker containers on the system. It uses the docker-py python api library and seeks to replicate some of the functionality of the ```docker ps``` native application. 
